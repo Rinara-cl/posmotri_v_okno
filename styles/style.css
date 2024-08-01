@@ -237,9 +237,12 @@ input {
 
 .content__details {
   width: 35%;
+ 
 }
 
 .content__list {
+  display: flex;
+  flex-direction: column;
   height: 298px;
   overflow: auto;
   position: relative;
@@ -249,7 +252,7 @@ input {
 .content__card-link {
   display: block;
   color: var(--color-white);
-  margin: 2px;
+  
 
   &.content__card-link_current {
     background-color: #545050;
@@ -272,9 +275,7 @@ input {
 
 .content__video-card {
   display: flex;
-  justify-content: start;
-  width: 398px;
-  height: 107px;
+  justify-content: space-between;
 }
 
 .title {
@@ -292,17 +293,15 @@ input {
 }
 
 .content__list-item:not(:last-of-type) {
-  width: 394px;
-  height: 107px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .content__video-card-thumbnail {
-  width: 48.62%
+  width: 48.62%;
 }
 
 .content__video-card-description-container {
-  width: 50.13%;
+  width: 50.12%;
 }
 
 .content__video-card-title {
@@ -327,6 +326,6 @@ input {
 }
 
 .more-button {
-  width: 399px;
+  width: 100%;
   padding: 6px;
 }
